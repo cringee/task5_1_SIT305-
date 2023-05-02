@@ -1,0 +1,47 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/news_image_view"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:scaleType="centerCrop" />
+
+    <TextView
+        android:id="@+id/news_title_text_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:padding="16dp" />
+
+    <TextView
+        android:id="@+id/news_description_text_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:padding="16dp" />
+
+    <TextView
+        android:id="@+id/relatedNewsTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Related News"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:padding="16dp"/>
+
+    <FrameLayout
+        android:id="@+id/related_news_fragment_container"
+        android:layout_width="match_parent"
+        android:layout_height="272dp"
+        android:layout_marginTop="16dp"
+        android:background="@color/white"
+        android:text="Related News Article Title and Description"
+        app:layout_constraintTop_toBottomOf="@id/news_description_text_view" />
+
+</LinearLayout>
